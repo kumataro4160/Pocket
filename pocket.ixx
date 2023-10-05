@@ -5,6 +5,7 @@ export import pocket.bitarr;
 export import pocket.lowestpop;
 export import pocket.fold;
 export import pocket.countnumshifts;
+export import pocket.bitreversal;
 
 export import pocket.iseven;
 export import pocket.isodd;
