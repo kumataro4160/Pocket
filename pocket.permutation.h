@@ -1,10 +1,10 @@
-﻿module;
+﻿#ifndef KUMATARO_INCLUDE_POCKET_PERMUTATION_H
+#define KUMATARO_INCLUDE_POCKET_PERMUTATION_H
 
 #include <cstdint>
 
-export module pocket.permutation;
 
-export namespace kuma
+namespace kuma
 {
 	using namespace std;
 
@@ -18,3 +18,6 @@ export namespace kuma
 		return ret;
 	}
 }
+
+
+#endif

@@ -1,10 +1,10 @@
-﻿module;
+﻿#ifndef KUMATARO_INCLUDE_POCKET_POWOFNAGATIVE1_H
+#define KUMATARO_INCLUDE_POCKET_POWOFNAGATIVE1_H
 
 #include <cstdint>
 
-export module pocket.powofnagative1;
 
-export namespace kuma
+namespace kuma
 {
 	using namespace std;
 
@@ -13,3 +13,6 @@ export namespace kuma
 		return 1 - ((n & 1) << 1);
 	}
 }
+
+
+#endif

@@ -1,10 +1,10 @@
-﻿module;
+﻿#ifndef KUMATARO_INCLUDE_POCKET_ABS_H
+#define KUMATARO_INCLUDE_POCKET_ABS_H
 
 #include <cstdint>
 
-export module pocket.abs;
 
-export namespace kuma
+namespace kuma
 {
 	using namespace std;
 
@@ -32,3 +32,6 @@ export namespace kuma
 		return x >= 0LL ? x : -x;
 	}
 }
+
+
+#endif

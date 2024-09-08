@@ -1,10 +1,10 @@
-﻿module;
+﻿#ifndef KUMATARO_INCLUDE_POCKET_SIGN_H
+#define KUMATARO_INCLUDE_POCKET_SIGN_H
 
 #include <cstdint>
 
-export module pocket.sign;
 
-export namespace kuma
+namespace kuma
 {
 	using namespace std;
 
@@ -13,3 +13,6 @@ export namespace kuma
 		return x > 0LL ? 1 : (x < 0LL ? -1 : 0);
 	}
 }
+
+
+#endif

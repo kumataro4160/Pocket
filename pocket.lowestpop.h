@@ -1,12 +1,11 @@
-﻿module;
+﻿#ifndef KUMATARO_INCLUDE_POCKET_LOWESTPOP_H
+#define KUMATARO_INCLUDE_POCKET_LOWESTPOP_H
 
 #include <cstdint>
+#include "pocket.bitarr.h"
 
-export module pocket.lowestpop;
 
-export import pocket.bitarr;
-
-export namespace kuma
+namespace kuma
 {
 	using namespace std;
 
@@ -30,3 +29,6 @@ export namespace kuma
 		return n & static_cast<bitarr64_t>(-static_cast<int64_t>(n));
 	}
 }
+
+
+#endif

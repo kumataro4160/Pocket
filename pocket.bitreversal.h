@@ -1,15 +1,11 @@
-module;
+#ifndef KUMATARO_INCLUDE_POCKET_BITREVERSAL_H
+#define KUMATARO_INCLUDE_POCKET_BITREVERSAL_H
 
-#include <cstdint>
+#include "pocket.bitarr.h"
 
-export module pocket.bitreversal;
 
-export import pocket.bitarr;
-
-export namespace kuma
+namespace kuma
 {
-	using namespace std;
-
 	constexpr bitarr8_t bitReversal(bitarr8_t n)noexcept
 	{
 		n = ((n & 0x0f) << 4) | ((n >> 4) & 0x0f);
@@ -48,3 +44,6 @@ export namespace kuma
 		return n;
 	}
 }
+
+
+#endif

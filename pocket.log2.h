@@ -1,11 +1,11 @@
-﻿module;
+﻿#ifndef KUMATARO_INCLUDE_POCKET_LOG2_H
+#define KUMATARO_INCLUDE_POCKET_LOG2_H
 
 #include <cstdint>
 #include <bit>
 
-export module pocket.log2;
 
-export namespace kuma
+namespace kuma
 {
 	using namespace std;
 
@@ -29,3 +29,6 @@ export namespace kuma
 		return static_cast<uint8_t>(std::bit_width(x) - 1);
 	}
 }
+
+
+#endif

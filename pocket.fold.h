@@ -1,12 +1,11 @@
-﻿module;
+﻿#ifndef KUMATARO_INCLUDE_POCKET_FOLD_H
+#define KUMATARO_INCLUDE_POCKET_FOLD_H
 
 #include <cstdint>
+#include "pocket.bitarr.h"
 
-export module pocket.fold;
 
-export import pocket.bitarr;
-
-export namespace kuma
+namespace kuma
 {
 	using namespace std;
 
@@ -66,3 +65,6 @@ export namespace kuma
 		return ret & ((1ULL << n) - 1);
 	}
 }
+
+
+#endif
